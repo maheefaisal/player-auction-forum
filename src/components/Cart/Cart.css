@@ -1,0 +1,15 @@
+p{
+    color: black;
+}
+.cart{
+    background-color: orange;
+    padding: 25px;
+    position: sticky;
+    top: 0;
+}
+.cart p{
+    font-size:17px;
+}
+.cart h3{
+    color: lightslategray;
+}
