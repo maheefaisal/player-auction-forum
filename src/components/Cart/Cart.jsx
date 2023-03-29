@@ -1,14 +1,15 @@
 import React from 'react';
 import './Cart.css'
 const Cart = ({cart}) => {
-    let playerName=[];
+    let playerPrice=0;
     for (const product in cart){
-       playerName=playerName.push[product.name]
+        playerPrice=playerPrice+product.price;
+        console.log(playerPrice)
     }
     return (
         <div className="cart">
             <h3>This is Player Summary</h3>
-            <p>Name:{playerName}</p>
+            <p>Name:{playerPrice}</p>
         </div>
     );
 };
