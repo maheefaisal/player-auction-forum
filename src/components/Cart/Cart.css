@@ -9,7 +9,14 @@ p{
 }
 .cart p{
     font-size:17px;
+    color: black;
 }
 .cart h3{
     color: lightslategray;
+}
+.cart h5{
+    color: #AA77FF;
+}
+.cart p span{
+    color: #AA77FF;
 }

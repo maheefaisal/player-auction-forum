@@ -2,20 +2,24 @@ import React from "react";
 import "./Cart.css";
 const Cart = ({ cart }) => {
   let playerPrice = 0;
-  let playerName = [];
+
   let playerCountry = [];
   for (const product of cart) {
     playerPrice = playerPrice + product.price;
-    playerName = playerName.concat(product.name);
     playerCountry = playerCountry.concat(product.country);
   }
-
+console.log(cart)
   return (
     <div className="cart">
       <h3>This is Player Summary</h3>
-      <p>Name:{playerName}</p>
-      <p>Country:{playerCountry}</p>
-      <p>PlayerPrice:{playerPrice}</p>
+      <h5>Name:{
+        cart.map(pd=> <p >{pd.name}</p>)
+        }</h5>
+      <h5>Country:{
+        cart.map(pd=> <p >{pd.country}</p>)
+        }</h5>
+      
+      <p><span>PlayerPrice:</span> {playerPrice}</p>
     </div>
   );
 };
